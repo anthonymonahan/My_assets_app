@@ -1,0 +1,102 @@
+<% provide(:title, "my_assets") %>
+
+<div class="center ">
+
+<body>
+
+<h4>         View or Edit My Assets</h4>
+<p>
+<%= link_to receipts_path, class: 'btn btn-warning btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Receipts
+<% end %>
+
+<%= link_to shares_path, class: 'btn btn-info btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Shares
+<% end %>
+
+<%= link_to investments_path, class: 'btn btn-success btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Investments
+<% end %>
+
+<%= link_to loans_path, class: 'btn btn-default btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Loans
+<% end %>
+
+<%= link_to miscs_path, class: 'btn btn-warning btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Misc
+<% end %>
+
+<%= link_to money_on_deposits_path, class: 'btn btn-info btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  deposits
+<% end %>
+
+<%= link_to pensions_path, class: 'btn btn-success btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i>  Pension
+<% end %>
+
+<%= link_to properties_path, class: 'btn btn-default btn-sm' do %>
+    <i class="glyphicon glyphicon-edit"></i> Properties
+<% end %>
+</p>
+
+<h4> Add My Assets</h4>
+<p>
+  <%= link_to new_investment_path, class: 'btn btn-default btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i> Investment
+  <% end %>
+
+
+  <%= link_to new_loan_path, class: 'btn btn-success btn-sm ' do %>
+      <i class="glyphicon glyphicon-plus"></i>loan
+  <% end %>
+
+
+  <%= link_to new_misc_path, class: 'btn btn-info btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Other Asset
+  <% end %>
+
+
+  <%= link_to new_money_on_deposit_path, class: 'btn btn-warning btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Money On Deposit
+  <% end %>
+
+
+
+
+  <%= link_to new_pension_path, class: 'btn btn-default btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Pension
+  <% end %>
+
+
+  <%= link_to new_property_path, class: 'btn btn-success btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Property
+  <% end %>
+
+
+  <%= link_to new_share_path, class: 'btn btn-info btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Stock
+  <% end %>
+
+
+  <%= link_to new_vehicle_path, class: 'btn btn-warning btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Vehicle
+  <% end %>
+</p>
+
+<br>
+
+
+
+<h5>About</h5>
+<p>
+  The <a href="http://www.railstutorial.org/"><em>Ruby on Rails
+  Tutorial</em></a> is a
+  <a href="http://www.railstutorial.org/book">book</a> and
+  <a href="http://www.ise.ie/">screencast series</a>
+  to teach web development with
+  <a href="http://rubyonrails.org/">Ruby on Rails</a>.
+  This is the sample application for the tutorial.
+</p>
+</body>
+
+</div>

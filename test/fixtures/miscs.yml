@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (name: MyString
+  : MyString
+  serial_no: MyString
+  : MyString
+  value: MyString
+  : 9.99
+  image: MyString
+  : 
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 
+
+two:
+  (name: MyString
+  : MyString
+  serial_no: MyString
+  : MyString
+  value: MyString
+  : 9.99
+  image: MyString
+  : 
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 

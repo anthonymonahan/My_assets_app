@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>company:</strong>
+  <%= @pension.company %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @pension.address %>
+</p>
+
+<p>
+  <strong>Maturity date:</strong>
+  <%= @pension.maturity_date %>
+</p>
+
+<p>
+  <strong>Current value:</strong>
+  <%= @pension.current_value %>
+</p>
+
+
+
+<p>
+  <strong>Expected value at maturity:</strong>
+  <%= @pension.expected_value_at_maturity %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @pension.customer_id %>
+</p>
+
+
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @pension.insurance_id %>
+</p>
+
+
+
+<p>
+  <strong>Receipt:</strong>
+  <%= @pension.receipt_id %>
+</p>
+
+
+
+
+
+<%= link_to 'Edit', edit_pension_path(@pension) %> |
+<%= link_to 'Back', pensions_path %>

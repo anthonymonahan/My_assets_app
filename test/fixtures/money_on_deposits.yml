@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (institution: MyString
+  amount: 9.99
+  account_number: MyString
+  customer_id: 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 
+
+two:
+  (institution: MyString
+  amount: 9.99
+  account_number: MyString
+  customer_id: 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 

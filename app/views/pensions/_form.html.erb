@@ -1,0 +1,41 @@
+<%= form_for(@pension) do |f| %>
+  <% if @pension.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pension.errors.count, "error") %> prohibited this pension from being saved:</h2>
+
+      <ul>
+      <% @pension.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :company %><br>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :maturity_date %><br>
+    <%= f.date_select :maturity_date %>
+  </div>
+  <div class="field">
+    <%= f.label :original_value %><br>
+    <%= f.text_field :original_value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expected_value_at_maturity %><br>
+    <%= f.text_field :expected_value_at_maturity %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

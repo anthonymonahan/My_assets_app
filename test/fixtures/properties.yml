@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (address: MyString
+  current_value: 9.99
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString
+
+two:
+  (address: MyString
+  current_value: 9.99
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString

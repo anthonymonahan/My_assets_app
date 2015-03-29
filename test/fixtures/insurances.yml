@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (: MyString
+  company: MyString
+  : MyString
+  policy_number: MyString
+  : MyString
+  website: MyString
+  : MyString
+  phone: MyString
+  : MyString
+  renewal_date: MyString
+  : 
+
+two:
+  (: MyString
+  company: MyString
+  : MyString
+  policy_number: MyString
+  : MyString
+  website: MyString
+  : MyString
+  phone: MyString
+  : MyString
+  renewal_date: MyString
+  : 

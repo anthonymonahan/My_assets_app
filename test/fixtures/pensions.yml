@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (company: MyString
+  address: MyString
+  maturity_date: 2015-01-20
+  current_value: MyString
+  : 9.99
+  expected_value_at_maturity: 9.99
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString
+
+two:
+  (company: MyString
+  address: MyString
+  maturity_date: 2015-01-20
+  current_value: MyString
+  : 9.99
+  expected_value_at_maturity: 9.99
+  customer_id: MyString
+  : 1
+  insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString

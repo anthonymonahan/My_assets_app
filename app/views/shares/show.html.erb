@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>Name of share:</strong>
+  <%= @share.name_of_share %>
+</p>
+
+
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @share.symbol %>
+</p>
+
+<p>
+  <strong>Original_Value:</strong>
+  <%= @share.original_value %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @share.price %>
+</p>
+
+
+
+<p>
+  <strong>Customer:</strong>
+  <%= @share.customer_id %>
+</p>
+
+
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @share.insurance_id %>
+</p>
+
+
+
+<p>
+  <strong>Receipt:</strong>
+  <%= @share.receipt_id %>
+</p>
+
+
+
+
+
+<%= link_to 'Edit', edit_share_path(@share) %> |
+<%= link_to 'Back', shares_path %>

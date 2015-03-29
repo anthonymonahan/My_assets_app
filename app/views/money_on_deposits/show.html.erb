@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>institution:</strong>
+  <%= @money_on_deposit.institution %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @money_on_deposit.amount %>
+</p>
+
+<p>
+  <strong>Account number:</strong>
+  <%= @money_on_deposit.account_number %>
+</p>
+
+
+
+
+
+
+
+
+
+<%= link_to 'Edit', edit_money_on_deposit_path(@money_on_deposit) %> |
+<%= link_to 'Back', money_on_deposits_path %>

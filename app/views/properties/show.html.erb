@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>address:</strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong>Current value:</strong>
+  <%= @property.current_value %>
+</p>
+
+
+
+
+
+
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>

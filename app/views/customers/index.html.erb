@@ -1,0 +1,32 @@
+<h1>Listing Customers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customer_Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.CustomerName %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.password %></td>
+        <td><%= link_to 'Show', customer %></td>
+        <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
+        <td><%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_customer_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Customer
+<% end %>
+

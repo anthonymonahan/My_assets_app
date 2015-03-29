@@ -1,0 +1,29 @@
+<h1>Listing money_on_deposits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>institution</th>
+      <th>Amount</th>
+      <th>Account number</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @money_on_deposits.each do |money_on_deposit| %>
+      <tr>
+        <td><%= money_on_deposit.institution %></td>
+        <td><%= money_on_deposit.amount %></td>
+        <td><%= money_on_deposit.account_number %></td>
+        <td><%= link_to 'Show', money_on_deposit %></td>
+        <td><%= link_to 'Edit', edit_money_on_deposit_path(money_on_deposit) %></td>
+        <td><%= link_to 'Destroy', money_on_deposit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Money on deposit', new_money_on_deposit_path %>

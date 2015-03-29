@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<p>
+  <strong>Company:</strong>
+  <%= @insurance.company %>
+</p>
+
+
+
+<p>
+  <strong>Policy number:</strong>
+  <%= @insurance.policy_number %>
+</p>
+
+
+<p>
+  <strong>Website:</strong>
+  <%= @insurance.website %>
+</p>
+
+
+
+<p>
+  <strong>Phone:</strong>
+  <%= @insurance.phone %>
+</p>
+
+
+
+<p>
+  <strong>Renewal date:</strong>
+  <%= @insurance.renewal_date %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_insurance_path(@insurance) %> |
+<%= link_to 'Back', insurances_path %>

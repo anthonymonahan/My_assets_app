@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>type of investment:</strong>
+  <%= @investment.type_of_investment %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @investment.value %>
+</p>
+
+
+
+
+
+
+
+
+
+<%= link_to 'Edit', edit_investment_path(@investment) %> |
+<%= link_to 'Back', investments_path %>

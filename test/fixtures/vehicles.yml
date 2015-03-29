@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  (make: MyString
+  : MyString
+  model: MyString
+  : MyString
+  year: MyString
+  : MyString
+  reg: MyString
+  : MyString
+  value: MyString
+  : 9.99
+  customer_id: MyString
+  : 1
+  Insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString
+
+two:
+  (make: MyString
+  : MyString
+  model: MyString
+  : MyString
+  year: MyString
+  : MyString
+  reg: MyString
+  : MyString
+  value: MyString
+  : 9.99
+  customer_id: MyString
+  : 1
+  Insurance_id: MyString
+  : 1
+  receipt_id: MyString
+  : 1
+  ): MyString

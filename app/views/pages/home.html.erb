@@ -1,0 +1,23 @@
+<% provide(:title, "Home") %>
+<% if logged_in? %>
+    <div class="row">
+      <aside class="col-md-4">
+        <section class="customer_info">
+          <%= render 'shared/customer_info' %>
+        </section>
+        <section class="vehicle_form">
+          <%= render 'shared/vehicle_form' %>
+        </section>
+      </aside>
+    </div>
+<% else %>
+
+<body>
+<h1>Welcome to My Assets App</h1>
+<p>
+<%= link_to new_customer_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> Register Here Now
+<% end %>
+</p>
+</body>
+<% end %>

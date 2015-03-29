@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>(name:</strong>
+  <%= @misc.name %>
+</p>
+
+
+
+<p>
+  <strong>Serial no:</strong>
+  <%= @misc.serial_no %>
+</p>
+
+
+
+<p>
+  <strong>Value:</strong>
+  <%= @misc.value %>
+</p>
+
+
+
+<p>
+  <strong>Image:</strong>
+  <%= @misc.image %>
+</p>
+
+
+
+<p>
+  <strong>Customer:</strong>
+  <%= @misc.customer_id %>
+</p>
+
+
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @misc.insurance_id %>
+</p>
+
+
+
+<p>
+  <strong>Receipt:</strong>
+  <%= @misc.receipt_id %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_misc_path(@misc) %> |
+<%= link_to 'Back', miscs_path %>

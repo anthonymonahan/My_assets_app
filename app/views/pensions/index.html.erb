@@ -1,0 +1,34 @@
+<h1>Listing pensions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>company</th>
+      <th>Address</th>
+      <th>Maturity date</th>
+      <th>Current value</th>
+      <th>Expected value at maturity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pensions.each do |pension| %>
+      <tr>
+        <td><%= pension.company %></td>
+        <td><%= pension.address %></td>
+        <td><%= pension.maturity_date %></td>
+        <td><%= pension.current_value %></td>
+        <td><%= pension.expected_value_at_maturity %></td>
+      </tr><tr>
+        <td><%= link_to 'Show', pension %></td>
+        <td><%= link_to 'Edit', edit_pension_path(pension) %></td>
+        <td><%= link_to 'Destroy', pension, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pension', new_pension_path %>
