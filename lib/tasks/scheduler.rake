@@ -34,7 +34,6 @@ namespace :scraper do
 
 
     end
-
     def test
       scraper = Scraper.new
       scraper.get_price("AERL.L")
