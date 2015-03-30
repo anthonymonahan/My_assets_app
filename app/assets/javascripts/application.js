@@ -16,3 +16,11 @@
 //= require turbolinks
 //= require_tree .
 
+$('#datepicker').datepicker({
+    dateformat: 'dd-mm-yy',
+    changeMonth: true,
+    changeYear: true,
+    yearRange: " -75:+50"
+
+})
+

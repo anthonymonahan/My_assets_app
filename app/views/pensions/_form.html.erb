@@ -21,11 +21,11 @@
   </div>
   <div class="field">
     <%= f.label :maturity_date %><br>
-    <%= f.date_select :maturity_date %>
+    <%= f.date_select :maturity_date, id: :datepicker %>
   </div>
   <div class="field">
-    <%= f.label :original_value %><br>
-    <%= f.text_field :original_value %>
+    <%= f.label :current_value %><br>
+    <%= f.text_field :current_value %>
   </div>
 
   <div class="field">
