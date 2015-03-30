@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
+  has_many :shares, dependent: :destroy
+
 
   def stockscrape
     "#{symbol} #{price}"
@@ -10,4 +12,4 @@ class Post < ActiveRecord::Base
   end
 
 end
-#<%= f.select(:stockscrape, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true)%>
+#<%= f.select(:symbol, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true)%>

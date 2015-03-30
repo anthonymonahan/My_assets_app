@@ -19,7 +19,7 @@
 
   <div class="field">
     <%= f.label :symbol %><br>
-    <%= f.text_field :symbol %>
+    <%= f.select(:symbol, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true) %>
   </div>
   <div class="field">
     <%= f.label :original_value %><br>
@@ -27,7 +27,7 @@
   </div>
     <div class="field">
       <%= f.label :price %><br>
-      <%= f.text_field :price %>
+      <%= f.select(:price, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true) %>
     </div>
 
 
