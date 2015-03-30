@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db09605e-680d-4564-b118-102e22e47f2e" name="Default" comment="3nd commit">
+    <list default="true" id="db09605e-680d-4564-b118-102e22e47f2e" name="Default" comment="4nd commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My_assets_app.iws" />
@@ -199,8 +199,8 @@
       <file leaf-file-name="scraper.rake" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/tasks/scraper.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7641129" vertical-offset="301" max-vertical-offset="1020">
-              <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+            <state vertical-scroll-proportion="1.5423387" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -700,7 +700,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427720112910</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4nd commit">
+      <created>1427725982989</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1427725982989</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -766,7 +772,8 @@
     </option>
     <MESSAGE value="2nd commit" />
     <MESSAGE value="3nd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3nd commit" />
+    <MESSAGE value="4nd commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4nd commit" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1174,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/scraper.rake">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7641129" vertical-offset="301" max-vertical-offset="1020">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        <state vertical-scroll-proportion="1.5423387" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
           <folding />
         </state>
       </provider>
