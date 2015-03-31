@@ -26,7 +26,9 @@ class SharesController < ApplicationController
   def create
     @share = Share.new(share_params)
     @share.customer_id = session[:customer_id]
-
+    @post = Post.find(share_params[:post_id])
+    @share.price = @post.price
+    @share.symbol = @post.symbol
     respond_to do |format|
       if @share.save
         format.html { redirect_to @share, notice: 'Share was successfully created.' }
@@ -70,6 +72,6 @@ class SharesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def share_params
-      params.require(:share).permit( :name_of_share, :symbol, :original_value, :customer_id,  :insurance_id,  :receipt_id, :price)
+      params.require(:share).permit(:name_of_share, :symbol, :original_value, :customer_id, :insurance_id, :receipt_id, :price, :post_id)
     end
 end

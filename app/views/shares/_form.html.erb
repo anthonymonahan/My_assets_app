@@ -18,22 +18,18 @@
   </div>
 
   <div class="field">
-    <%= f.label :symbol %><br>
-    <%= f.select(:symbol, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true) %>
+    <b>Symbol </b><br>
+    <%= f.select(:post_id, options_from_collection_for_select(Post.all, :id, :symbol), :include_blank => true) %>
   </div>
   <div class="field">
     <%= f.label :original_value %><br>
     <%= f.text_field :original_value %>
   </div>
-    <div class="field">
-      <%= f.label :price %><br>
-      <%= f.select(:price, options_from_collection_for_select(Post.all, :id, :stockscrape), :include_blank => true) %>
-    </div>
 
 
 
 
-  <div class="actions">
+    <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>

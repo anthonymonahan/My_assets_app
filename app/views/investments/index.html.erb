@@ -14,9 +14,9 @@
       <tr>
         <td><%= investment.type_of_investment %></td>
         <td><%= investment.value %></td>
-        <td><%= link_to 'Show', investment %></td>
-        <td><%= link_to 'Edit', edit_investment_path(investment) %></td>
-        <td><%= link_to 'Destroy', investment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', investment, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_investment_path(investment), class: 'btn btn-info btn-xs' %></td>
+        <td><%= link_to 'Destroy', investment, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>
   </tbody>
