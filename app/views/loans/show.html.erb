@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>(institution:</strong>
+  <strong>Institution:</strong>
   <%= @loan.institution %>
 </p>
 
@@ -16,7 +16,12 @@
 
 <p>
   <strong>Amount:</strong>
-  <%= @loan.amount %>
+  <%= @loan.price %>
+</p>
+
+<p>
+  <strong>Original Amount:</strong>
+  <%= @loan.original_value %>
 </p>
 
 

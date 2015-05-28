@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330171526) do
+ActiveRecord::Schema.define(version: 20150528121007) do
 
   create_table "customers", force: true do |t|
     t.string   "CustomerName"
@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "loans", force: true do |t|
@@ -50,6 +52,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "miscs", force: true do |t|
@@ -62,6 +66,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "money_on_deposits", force: true do |t|
@@ -73,6 +79,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "pensions", force: true do |t|
@@ -86,6 +94,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "posts", force: true do |t|
@@ -103,6 +113,8 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.integer  "receipt_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal "price"
+    t.decimal "original_value"
   end
 
   create_table "receipts", force: true do |t|
@@ -122,7 +134,6 @@ ActiveRecord::Schema.define(version: 20150330171526) do
     t.text    "updated_at"
     t.decimal "price"
     t.decimal "original_value"
-    t.integer "column_post_id"
     t.integer "post_id"
   end
 

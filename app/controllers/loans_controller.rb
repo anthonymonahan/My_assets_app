@@ -71,6 +71,6 @@ class LoansController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def loan_params
-      params.require(:loan).permit(:institution,  :account_number,  :amount, :customer_id, :insurance_id, :receipt_id)
+      params.require(:loan).permit(:institution, :account_number, :amount, :price, :original_value, :customer_id, :insurance_id, :receipt_id)
     end
 end

@@ -5,6 +5,8 @@
     <tr>
       <th>address</th>
       <th>Current value</th>
+      <th>Original value</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,7 +15,9 @@
     <% @properties.each do |property| %>
       <tr>
         <td><%= property.address %></td>
-        <td><%= property.current_value %></td>
+        <td><%= property.price %></td>
+        <td><%= property.original_value %></td>
+
       </tr><tr>
         <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>

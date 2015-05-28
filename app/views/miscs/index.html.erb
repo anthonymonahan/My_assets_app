@@ -3,9 +3,10 @@
 <table>
   <thead>
     <tr>
-      <th>name</th>
+      <th>Name</th>
       <th>Serial no</th>
       <th>Value</th>
+      <th>Original Value</th>
       <th>Image</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +17,8 @@
       <tr>
         <td><%= misc.name %></td>
         <td><%= misc.serial_no %></td>
-        <td><%= misc.value %></td>
+        <td><%= misc.price %></td>
+        <td><%= misc.original_value %></td>
         <td><%= misc.image %></td>
       </tr><tr>
         <td><%= link_to 'Show', misc %></td>

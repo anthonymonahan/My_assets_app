@@ -1,4 +1,5 @@
 class Receipt < ActiveRecord::Base
+  belongs_to Customer
   #has_many :properties, dependent: :destroy
   #has_many :money_on_deposits, dependent: :destroy
   #has_many :shares, dependent: :destroy

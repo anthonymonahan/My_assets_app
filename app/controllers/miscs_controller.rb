@@ -71,6 +71,6 @@ class MiscsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def misc_params
-      params.require(:misc).permit(:name, :serial_no, :value, :image, :customer_id, :insurance_id, :receipt_id)
+      params.require(:misc).permit(:name, :serial_no, :value, :image, :price, :original_value, :customer_id, :insurance_id, :receipt_id)
     end
 end

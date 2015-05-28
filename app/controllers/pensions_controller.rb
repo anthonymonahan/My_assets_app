@@ -71,6 +71,6 @@ class PensionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pension_params
-      params.require(:pension).permit(:company, :address, :maturity_date, :original_value,  :expected_value_at_maturity, :customer_id,  :insurance_id, :receipt_id)
+      params.require(:pension).permit(:company, :address, :maturity_date, :original_value, :expected_value_at_maturity, :price, :original_value, :customer_id, :insurance_id, :receipt_id)
     end
 end

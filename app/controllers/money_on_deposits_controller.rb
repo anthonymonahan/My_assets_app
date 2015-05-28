@@ -71,6 +71,6 @@ class MoneyOnDepositsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def money_on_deposit_params
-      params.require(:money_on_deposit).permit(:institution, :amount, :account_number, :customer_id, :insurance_id, :receipt_id)
+      params.require(:money_on_deposit).permit(:institution, :amount, :account_number, :price, :original_value, :customer_id, :insurance_id, :receipt_id)
     end
 end

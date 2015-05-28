@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>(name:</strong>
+  <strong>Name:</strong>
   <%= @misc.name %>
 </p>
 
@@ -16,7 +16,12 @@
 
 <p>
   <strong>Value:</strong>
-  <%= @misc.value %>
+  <%= @misc.price %>
+</p>
+
+<p>
+  <strong>Original Value:</strong>
+  <%= @misc.original_value %>
 </p>
 
 
@@ -35,17 +40,11 @@
 
 
 
-<p>
-  <strong>Insurance:</strong>
-  <%= @misc.insurance_id %>
-</p>
 
 
 
-<p>
-  <strong>Receipt:</strong>
-  <%= @misc.receipt_id %>
-</p>
+
+
 
 
 

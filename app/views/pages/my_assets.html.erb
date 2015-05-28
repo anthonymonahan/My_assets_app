@@ -37,6 +37,10 @@
 <%= link_to properties_path, class: 'btn btn-default btn-sm' do %>
     <i class="glyphicon glyphicon-edit"></i> Properties
 <% end %>
+
+  <%= link_to vehicles_path, class: 'btn btn-warning btn-sm' do %>
+      <i class="glyphicon glyphicon-edit"></i> Vehicles
+  <% end %>
 </p>
 
 <h4> Add My Assets</h4>
@@ -52,12 +56,12 @@
 
 
   <%= link_to new_misc_path, class: 'btn btn-info btn-sm' do %>
-      <i class="glyphicon glyphicon-plus"></i>Other Asset
+      <i class="glyphicon glyphicon-plus"></i>Misc
   <% end %>
 
 
   <%= link_to new_money_on_deposit_path, class: 'btn btn-warning btn-sm' do %>
-      <i class="glyphicon glyphicon-plus"></i>Money On Deposit
+      <i class="glyphicon glyphicon-plus"></i>Deposit
   <% end %>
 
 
@@ -81,8 +85,12 @@
   <%= link_to new_vehicle_path, class: 'btn btn-warning btn-sm' do %>
       <i class="glyphicon glyphicon-plus"></i>Vehicle
   <% end %>
-</p>
 
+  <%= link_to new_receipt_path, class: 'btn btn-default btn-sm' do %>
+      <i class="glyphicon glyphicon-plus"></i>Receipt
+  <% end %>
+</p>
+schema_migrations
 <br>
 
 

@@ -7,6 +7,7 @@ class Customer < ActiveRecord::Base
   has_many :investments, dependent: :destroy
   has_many :miscs, dependent: :destroy
   has_many :loans, dependent: :destroy
+  has_many :receipts, dependent: :destroy
 
   before_save { self.email = email.downcase }
   validates :CustomerName, presence: true, length: { maximum: 50 }

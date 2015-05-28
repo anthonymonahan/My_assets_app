@@ -10,4 +10,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def my_assets
+  end
+
 end
