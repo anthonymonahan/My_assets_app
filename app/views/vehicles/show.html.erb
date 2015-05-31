@@ -38,11 +38,15 @@
   <%= @vehicle.original_value %>
 </p>
 
+<p>
+  <strong>Total Value:</strong>
+  <%= @vehicle.total %>
+</p>
 
 
 
 
 
 
-<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
-<%= link_to 'Back', vehicles_path %>
+
+<%= link_to 'Show All Vehicles', vehicles_path, class: 'btn btn-success btn-xs' %>

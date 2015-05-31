@@ -7,6 +7,7 @@
       <th>Account number</th>
       <th>Price</th>
       <th>Original Value</th>
+      <th>Profit/Loss</th>
 
 
       <th colspan="3"></th>
@@ -20,17 +21,22 @@
         <td><%= loan.account_number %></td>
         <td><%= loan.price %></td>
         <td><%= loan.original_value %></td>
+        <td><%= loan.total %></td>
+
 
 
       </tr><tr>
-        <td><%= link_to 'Show', loan %></td>
-        <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
-        <td><%= link_to 'Destroy', loan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <td><%= link_to 'Show', loan, class: 'btn btn-primary btn-xs' %></td>
+    <td><%= link_to 'Edit', edit_loan_path(loan), class: 'btn btn-info btn-xs' %></td>
+    <td><%= link_to 'Delete', loan, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
+  </tr>
+  <% end %>
   </tbody>
+</table>
 </table>
 
 <br>
 
-<%= link_to 'New Loan', new_loan_path %>
+<%= link_to new_loan_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Loan
+<% end %>

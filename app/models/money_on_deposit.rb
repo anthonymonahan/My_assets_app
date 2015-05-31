@@ -4,4 +4,7 @@ class MoneyOnDeposit < ActiveRecord::Base
   default_scope -> { order('created_at DESC') }
   #belongs_to :receipt
   #belongs_to :insurance
+  def total
+    price
+  end
 end

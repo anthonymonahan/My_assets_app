@@ -27,8 +27,7 @@
         <td><%= insurance.phone %></td>
         <td><%= insurance.renewal_date %></td>
         <td><%= link_to 'Show', insurance %></td>
-        <td><%= link_to 'Edit', edit_insurance_path(insurance) %></td>
-        <td><%= link_to 'Destroy', insurance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', insurance, method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +35,6 @@
 
 <br>
 
-<%= link_to 'New Insurance', new_insurance_path %>
+<%= link_to new_insurance_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Insurance
+<% end %>

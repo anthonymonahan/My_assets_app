@@ -69,6 +69,6 @@ class ReceiptsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def receipt_params
-      params.require(:receipt).permit(:details,  :image)
+      params.require(:receipt).permit(:details, :image, :customer_id)
     end
 end

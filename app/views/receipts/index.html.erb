@@ -14,8 +14,7 @@
         <td><%= receipt.image %></td>
       </tr><tr>
         <td><%= link_to 'Show', receipt, class: 'btn btn-primary btn-xs' %></td>
-        <td><%= link_to 'Edit', edit_receipt_path(receipt, class: 'btn btn-info btn-xs') %></td>
-        <td><%= link_to 'Destroy', receipt, class: 'btn btn-danger btn-xs', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Delete', receipt, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
         </div>
       </tr>
     <% end %>
@@ -24,4 +23,6 @@
 
 <br>
 
-<%= link_to 'New Receipt', new_receipt_path, class: 'btn btn-success' %>
+<%= link_to new_receipt_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New receipt
+<% end %>

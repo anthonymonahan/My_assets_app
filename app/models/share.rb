@@ -4,4 +4,8 @@ class Share < ActiveRecord::Base
   default_scope -> { order('created_at DESC') }
   belongs_to :post
   #belongs_to :insurance
+
+  def total
+    price - original_value
+  end
 end

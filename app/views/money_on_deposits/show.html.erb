@@ -20,6 +20,10 @@
   <%= @money_on_deposit.account_number %>
 </p>
 
+<p>
+  <strong>Total Value:</strong>
+  <%= @investment.total %>
+</p>
 
 
 
@@ -28,5 +32,6 @@
 
 
 
-<%= link_to 'Edit', edit_money_on_deposit_path(@money_on_deposit) %> |
-<%= link_to 'Back', money_on_deposits_path %>
+
+<%= link_to 'Edit', edit_money_on_deposit_path(@money_on_deposit), class: 'btn btn-info btn-xs' %> |
+<%= link_to 'Show All Deposits', money_on_deposits_path, class: 'btn btn-success btn-xs' %>

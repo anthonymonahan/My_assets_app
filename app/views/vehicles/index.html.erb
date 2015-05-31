@@ -9,6 +9,8 @@
       <th>Reg</th>
       <th>Value</th>
       <th>Original Value</th>
+      <th>Profit/Loss</th>
+
 
       <th colspan="3"></th>
     </tr>
@@ -23,16 +25,20 @@
         <td><%= vehicle.reg %></td>
         <td><%= vehicle.price %></td>
         <td><%= vehicle.original_value %></td>
+        <td><%= vehicle.total %></td>
+
 
       </tr><tr>
-        <td><%= link_to 'Show', vehicle %></td>
-        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
-        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <td><%= link_to 'Show', vehicle, class: 'btn btn-primary btn-xs' %></td>
+    <td><%= link_to 'Delete', vehicle, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
+  </tr>
+  <% end %>
   </tbody>
+</table>
 </table>
 
 <br>
 
-<%= link_to 'New Vehicle', new_vehicle_path %>
+<%= link_to new_vehicle_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Vehicle
+<% end %>

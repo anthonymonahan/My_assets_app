@@ -1,5 +1,7 @@
 class Receipt < ActiveRecord::Base
-  belongs_to Customer
+  belongs_to :customer
+
+  default_scope -> { order('created_at DESC') }
   #has_many :properties, dependent: :destroy
   #has_many :money_on_deposits, dependent: :destroy
   #has_many :shares, dependent: :destroy

@@ -24,11 +24,9 @@
   <%= @loan.original_value %>
 </p>
 
-
-
 <p>
-  <strong>Customer:</strong>
-  <%= @loan.customer_id %>
+  <strong>Total Value:</strong>
+  <%= @loan.total %>
 </p>
 
 
@@ -37,5 +35,5 @@
 
 
 
-<%= link_to 'Edit', edit_loan_path(@loan) %> |
-<%= link_to 'Back', loans_path %>
+<%= link_to 'Edit', edit_loan_path(@loan), class: 'btn btn-info btn-xs' %> |
+<%= link_to 'Show All Loans', loans_path, class: 'btn btn-success btn-xs' %>

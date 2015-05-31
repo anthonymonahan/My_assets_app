@@ -51,9 +51,13 @@
   <%= @pension.receipt_id %>
 </p>
 
+<p>
+  <strong>Total Value:</strong>
+  <%= @pension.total %>
+</p>
 
 
 
 
-<%= link_to 'Edit', edit_pension_path(@pension) %> |
-<%= link_to 'Back', pensions_path %>
+
+<%= link_to 'Show All Pensions', vehicles_path, class: 'btn btn-success btn-xs' %>

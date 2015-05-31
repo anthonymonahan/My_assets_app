@@ -8,6 +8,8 @@
       <th>Maturity date</th>
       <th>Current value</th>
       <th>Original value</th>
+      <th>Total Value</th>
+
       <th>Expected value at maturity</th>
       <th colspan="3"></th>
     </tr>
@@ -21,16 +23,21 @@
         <td><%= pension.maturity_date %></td>
         <td><%= pension.price %></td>
         <td><%= pension.original_value %></td>
+        <td><%= pension.total %></td>
         <td><%= pension.expected_value_at_maturity %></td>
+
+
       </tr><tr>
-        <td><%= link_to 'Show', pension %></td>
-        <td><%= link_to 'Edit', edit_pension_path(pension) %></td>
-        <td><%= link_to 'Destroy', pension, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <td><%= link_to 'Show', pension, class: 'btn btn-primary btn-xs' %></td>
+    <td><%= link_to 'Delete', pension, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
+  </tr>
+  <% end %>
   </tbody>
+</table>
 </table>
 
 <br>
 
-<%= link_to 'New Pension', new_pension_path %>
+<%= link_to new_pension_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Pension
+<% end %>

@@ -38,6 +38,10 @@
   <%= @misc.customer_id %>
 </p>
 
+<p>
+  <strong>Total Value:</strong>
+  <%= @investment.total %>
+</p>
 
 
 
@@ -48,5 +52,6 @@
 
 
 
-<%= link_to 'Edit', edit_misc_path(@misc) %> |
-<%= link_to 'Back', miscs_path %>
+
+<%= link_to 'Edit', edit_misc_path(@misc), class: 'btn btn-info btn-xs' %> |
+<%= link_to 'Show All Other Assets', misc_path, class: 'btn btn-success btn-xs' %>

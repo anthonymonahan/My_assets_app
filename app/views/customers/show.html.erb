@@ -8,10 +8,64 @@
       </h1>
     </section>
   </aside>
-  <div class="col-md-8">
+</div>
+
+<div class="row">
+
+
+  <section class="col-md-8">
     <% if @customer.shares.any? %>
-        <h3>Shares (<%= @customer.shares.count %>)</h3>
+        <h5>Shares (<%= @customer.shares.count %>)</h5>
         <ol class="shares">
+        </ol>
+    <% end %>
+  </section>
+  <div class="col-md-8">
+    <% if @customer.investments.any? %>
+        <h5>Investments (<%= @customer.investments.count %>)</h5>
+        <ol class="investments">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.loans.any? %>
+        <h5>Loans (<%= @customer.loans.count %>)</h5>
+        <ol class="loans">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.miscs.any? %>
+        <h5>Other Possessions (<%= @customer.miscs.count %>)</h5>
+        <ol class="miscs">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.money_on_deposits.any? %>
+        <h5>Deposits (<%= @customer.money_on_deposits.count %>)</h5>
+        <ol class="money_on_deposits">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.pensions.any? %>
+        <h5>Pensions (<%= @customer.pensions.count %>)</h5>
+        <ol class="pensions">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.properties.any? %>
+        <h5>Properties (<%= @customer.properties.count %>)</h5>
+        <ol class="properties">
+        </ol>
+    <% end %>
+  </div>
+  <div class="col-md-8">
+    <% if @customer.vehicles.any? %>
+        <h5>Vehicles (<%= @customer.vehicles.count %>)</h5>
+        <ol class="vehicles">
         </ol>
     <% end %>
   </div>

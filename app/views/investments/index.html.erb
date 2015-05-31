@@ -3,9 +3,10 @@
 <table>
   <thead>
     <tr>
-      <th>type of investment</th>
+      <th>Type of Investment</th>
       <th>Price</th>
       <th>Original Value</th>
+      <th>Profit/Loss</th>
 
       <th colspan="3"></th>
     </tr>
@@ -17,14 +18,21 @@
         <td><%= investment.type_of_investment %></td>
         <td><%= investment.price %></td>
         <td><%= investment.original_value %></td>
-        <td><%= link_to 'Show', investment %></td>
-        <td><%= link_to 'Edit', edit_investment_path(investment) %></td>
-        <td><%= link_to 'Destroy', investment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= investment.total %></td>
+
+
       </tr>
-    <% end %>
+      <tr>
+        <td><%= link_to 'Show', investment, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Delete', investment, class: 'btn btn-danger btn-xs', method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
   </tbody>
 </table>
 
+
 <br>
 
-<%= link_to 'New Investment', new_investment_path %>
+<%= link_to new_investment_path, class: 'btn btn-success' do %>
+    <i class="glyphicon glyphicon-plus"></i> New Investment
+<% end %>
