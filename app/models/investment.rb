@@ -8,4 +8,8 @@ class Investment < ActiveRecord::Base
   def total
     price - original_value
   end
+
+  def total_amount
+    @total_amount ||= read_attribute(:total_amount) || transactions.sum(:total)
+  end
 end

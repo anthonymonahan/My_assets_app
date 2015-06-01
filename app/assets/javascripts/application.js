@@ -24,3 +24,4 @@ $('#datepicker').datepicker({
 
 })
 
+//= require chartkick

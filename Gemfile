@@ -30,6 +30,8 @@ gem 'nokogiri'
 
 gem 'populator'
 
+gem "chartkick"
+
 # gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library

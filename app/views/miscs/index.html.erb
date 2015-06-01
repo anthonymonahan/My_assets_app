@@ -2,13 +2,14 @@
 
 <table>
   <thead>
+  <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+  <%= pie_chart Misc.group(:name).count %>
     <tr>
       <th>Name</th>
       <th>Serial no</th>
       <th>Value</th>
       <th>Original Value</th>
       <th>Profit/Loss</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,7 +23,6 @@
         <td><%= misc.original_value %></td>
         <td><%= misc.total %></td>
 
-        <td><%= misc.image %></td>
 
 
       </tr><tr>

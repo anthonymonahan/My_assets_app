@@ -2,6 +2,8 @@
 
 <table>
   <thead>
+  <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+  <%= pie_chart MoneyOnDeposit.group(:institution).count %>
     <tr>
       <th>Institution</th>
       <th>Account number</th>
