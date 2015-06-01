@@ -4,7 +4,8 @@ class VehiclesController < ApplicationController
   # GET /vehicles
   # GET /vehicles.json
   def index
-    @vehicles = Vehicle.all
+    @customer = Customer.find(session[:customer_id])
+    @vehicles = @customer.vehicles
   end
 
   # GET /vehicles/1

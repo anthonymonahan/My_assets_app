@@ -4,7 +4,8 @@ class MiscsController < ApplicationController
   # GET /miscs
   # GET /miscs.json
   def index
-    @miscs = Misc.all
+    @customer = Customer.find(session[:customer_id])
+    @miscs = @customer.miscs
   end
 
   # GET /miscs/1

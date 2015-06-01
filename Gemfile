@@ -32,6 +32,8 @@ gem 'populator'
 
 gem "chartkick"
 
+gem "rails_admin", '~> 0.6.7'
+
 # gem 'therubyracer',  platforms: :ruby
 
 # Use jquery as the JavaScript library

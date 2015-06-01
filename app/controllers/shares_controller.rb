@@ -4,7 +4,8 @@ class SharesController < ApplicationController
   # GET /shares
   # GET /shares.json
   def index
-    @shares = Share.all
+    @customer = Customer.find(session[:customer_id])
+    @shares = @customer.shares
   end
 
   # GET /shares/1

@@ -4,7 +4,8 @@ class PropertiesController < ApplicationController
   # GET /properties
   # GET /properties.json
   def index
-    @properties = Property.all
+    @customer = Customer.find(session[:customer_id])
+    @properties = @customer.properties
   end
 
   # GET /properties/1

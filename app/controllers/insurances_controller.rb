@@ -6,7 +6,8 @@ class InsurancesController < ApplicationController
   # GET /insurances
   # GET /insurances.json
   def index
-    @insurances = Insurance.all
+    @customer = Customer.find(session[:customer_id])
+    @insurances = @customer.investments
   end
 
   # GET /insurances/1

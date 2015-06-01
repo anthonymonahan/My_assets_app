@@ -4,7 +4,8 @@ class PensionsController < ApplicationController
   # GET /pensions
   # GET /pensions.json
   def index
-    @pensions = Pension.all
+    @customer = Customer.find(session[:customer_id])
+    @pensions = @customer.pensions
   end
 
   # GET /pensions/1

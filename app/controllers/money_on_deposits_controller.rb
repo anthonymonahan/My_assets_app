@@ -4,7 +4,8 @@ class MoneyOnDepositsController < ApplicationController
   # GET /money_on_deposits
   # GET /money_on_deposits.json
   def index
-    @money_on_deposits = MoneyOnDeposit.all
+    @customer = Customer.find(session[:customer_id])
+    @money_on_deposits = @customer.money_on_deposits
   end
 
   # GET /money_on_deposits/1

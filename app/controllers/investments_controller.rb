@@ -4,7 +4,8 @@ class InvestmentsController < ApplicationController
   # GET /investments
   # GET /investments.json
   def index
-    @investments = Investment.all
+    @customer = Customer.find(session[:customer_id])
+    @investments = @customer.investments
   end
 
   # GET /investments/1

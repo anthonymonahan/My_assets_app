@@ -5,7 +5,7 @@
 
 <table>
   <thead>
-  <%= pie_chart Share.group(:name_of_share).count %>
+  <%= pie_chart @shares.group(:name_of_share).count %>
   <tr>
       <th>Name of share</th>
       <th>Symbol</th>

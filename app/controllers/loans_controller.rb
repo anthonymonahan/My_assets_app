@@ -4,7 +4,8 @@ class LoansController < ApplicationController
   # GET /loans
   # GET /loans.json
   def index
-    @loans = Loan.all
+    @customer = Customer.find(session[:customer_id])
+    @loans = @customer.loans
   end
 
   # GET /loans/1
